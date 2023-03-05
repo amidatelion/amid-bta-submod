@@ -1,0 +1,28 @@
+{
+	"TargetID": "CareerDifficultySettings",
+	"Instructions": [
+		{
+			"JSONPath": "$.difficultyList[?(@.ID== 'diff_startingplanet')].Options",
+			"Action": "ArrayAdd",
+			"Value": {
+				"ID": "diff_NovaCat",
+				"Name": "Nova Cat",
+				"TelemetryEventDesc": "",
+				"DifficultyValue": 2,
+				"CareerScoreModifier": 0.8,
+				"DifficultyConstants": [
+					{
+						"ConstantType": "CareerMode",
+						"ConstantName": "StartingSystems",
+						"ConstantValue": "Juazeiro"
+					},
+					{
+						"ConstantType": "CareerMode",
+						"ConstantName": "StartingRandomMechLists",
+						"ConstantValue": "itemCollection_Mechs_Starting_Nova_One,itemCollection_Mechs_Starting_Nova_Two,itemCollection_Mechs_Starting_Nova_Three,itemCollection_Mechs_Starting_Nova_Four,itemCollection_Mechs_Starting_Nova_Five"
+					}
+				]
+			}
+		}
+	]
+}
